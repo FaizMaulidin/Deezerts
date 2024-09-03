@@ -8,6 +8,7 @@ import { useReducer, useState} from 'react';
 import { dataReducer } from './useReact/Reducer';
 import OrderConfirmed from './components/OrderConfirmed';
 import Credit from './components/Credit';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
     const [data, setData] = useReducer(dataReducer, database)
@@ -32,6 +33,7 @@ function App() {
                 <div className={blackClass}></div>
             </div>
             <Credit/>
+            <SpeedInsights/>
             <OrderConfirmed/>
         </AllContexts>
   );
