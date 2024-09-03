@@ -7,6 +7,7 @@ import AllContexts from './useReact/AllContexts';
 import { useReducer, useState} from 'react';
 import { dataReducer } from './useReact/Reducer';
 import OrderConfirmed from './components/OrderConfirmed';
+import Credit from './components/Credit';
 
 function App() {
     const [data, setData] = useReducer(dataReducer, database)
@@ -24,12 +25,13 @@ function App() {
         >
             <div className='p-6 lg:p-12 xl:p-24 flex flex-col lg:flex-row gap-7 font-default font-bold text-Rose900 bg-Rose50'>
                 <div className='flex flex-col gap-8 flex-grow'>
-                    <Headline text="Desserts"/>
+                    <Headline text="Deezerts"/>
                     <ProductList/>
                 </div>
                 <Cartlist/>
                 <div className={blackClass}></div>
             </div>
+            <Credit/>
             <OrderConfirmed/>
         </AllContexts>
   );

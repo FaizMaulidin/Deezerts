@@ -25,7 +25,7 @@ const Cartlist = () => {
 							<p>Order Total</p>
 							<p className="price text-2xl"><b>${totalPrice.toFixed(2)}</b></p>
 						</div>
-						<div className="notes flex justify-center gap-1 p-3 bg-Rose50 rounded-md">
+						<div className="notes flex justify-center items-center gap-1 p-3 bg-Rose50 rounded-md">
 							<NeutralLogo/>
 							<p>This is a <b>carbon-neutral</b> delivery</p>
 						</div>

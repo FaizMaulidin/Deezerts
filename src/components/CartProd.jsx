@@ -24,7 +24,7 @@ const CartProd = ({res, keyId}) => {
         <div ref={ref} className='opacity-0 transition-all duration-300 ease-in-out -translate-y-5'>
             <div className='flex justify-between items-center'>
                 <CartProductInfo res={res}/>
-                <button className='border-[1px] h-5 w-5 border-Rose300 flex items-center justify-center rounded-full'
+                <button className='border-[1px] h-5 min-w-5 border-Rose300 flex items-center justify-center rounded-full'
                     onClick={() => dispatchs({
                         type: 'remove',
                         id: keyId
